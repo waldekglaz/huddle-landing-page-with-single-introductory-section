@@ -7,9 +7,89 @@ $clrMagenta: hsl(300, 69%, 71%);
 
 $headingFont: 'Poppins', sans-serif;
 $bodyFont:'Open Sans', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
 
+.container{
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: $clrViolet;
+    padding: 1.5rem 2rem;
+    color: #fff;
+    font-family:$bodyFont;
 
-
+    .logo{
+        img{
+            width: 30%;
+            margin-bottom: 3rem;
+        }
+    }
+    .mockups{
+        img{
+            display: block;
+            width: 100%;
+           margin-bottom: 4rem;
+        }
+        
+    }
+    .section{
+        text-align: center;
+        h1{
+            font-family: $headingFont;
+            margin-bottom: 1rem;
+        }
+        p{
+            margin-bottom: 2rem;
+        }
+        .btn{
+            background-color: #fff;
+            display: block;
+            width: 80%;
+            text-decoration: none;
+            color: $clrViolet;
+            padding: 0.5rem 4rem;
+            border-radius: 1.5rem;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+            margin: 0 auto 4rem;
+            transition: 0.2s;
+            &:hover{
+                background-color: $clrMagenta;
+                color: #fff;
+            }
+        }
+    }
+    .social{
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width:40%;
+            margin: 0 auto;
+            li{
+                
+                i{
+                    color: #fff;
+                    border: 1px solid #fff;
+                    padding: 0.5rem;
+                    border-radius: 50%;
+                    transition: 0.2s;
+                    &:hover{
+                        color: $clrMagenta;
+                        border-color: $clrMagenta;
+                    }
+                }
+                .fa-facebook-f{
+                    padding: 0.5rem 0.75rem;
+                }
+                
+            }
+        }
+    }
+}
 
 // front end mentor 
 
